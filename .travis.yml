@@ -1,0 +1,10 @@
+language: python
+dist: xenial
+python:
+  - "3.8.12"
+install:
+  - pip install -r requirements/dev.txt
+before_script:
+  - pip install PyYAML
+script:
+  - ENVIRONMENT=test coverage run $(which pytest)
