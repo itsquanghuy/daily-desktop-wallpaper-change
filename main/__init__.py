@@ -8,7 +8,7 @@ from .engines.unsplash import fetch_random_photo
 os.chdir(os.path.dirname(__file__))
 
 
-def start_change_desktop_wallpaper():
+def main():
     photo_info = fetch_random_photo()
 
     if photo_info:
